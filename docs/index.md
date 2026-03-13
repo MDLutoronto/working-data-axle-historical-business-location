@@ -1,13 +1,17 @@
 ---
 title: "Working with the Data Axle Historical Business Location Data"
 layout: "home"
-description: ""
+description: "The Data Axle Historical Business Location Data provides one data file (.txt or .csv format) for each year. The [US data](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/GY5K1C) runs from 1997-2024 and contains 11-15 million records per year. The [Canadian data](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/IPKREG) runs from 2009-2023 and contains 1.5-2.5 million records per year. Records provide information about business location (including address, census geography & lat/long coordinates (US database only)), number of employees, sales volume, NAICS & SIC codes, unique identifier across time for businesses and parent entities. Complete record layouts and decodes are available for download via the Borealis links above."
 permalink: "/"  #! Remove this if not the homepage
+staff:
+ - name: Kara Handren
+   link: https://library.utoronto.ca/staff/kara-handren
+
 ---
 
 # Working with the Data Axle Historical Business Location Data
 
-The Data Axle Historical Business Location Data provides one data file (.txt or .csv format) for each year. The [US data](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/GY5K1C) runs from 1997\-2024 and contains 11\-15 million records per year. The [Canadian data](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/IPKREG) runs from 2009\-2023 and contains 1\.5\-2\.5 million records per year. Records provide information about business location (including address, census geography \& lat/long coordinates (US database only)), number of employees, sales volume, NAICS \& SIC codes, unique identifier across time for businesses and parent entities. Complete record layouts and decodes are available for download via the Borealis links above.
+The Data Axle Historical Business Location Data provides one data file (.txt or .csv format) for each year. The [US data](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/GY5K1C) runs from 1997\-2024 and contains 11\-15 million records per year. The [Canadian data](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/IPKREG) runs from 2009\-2023 and contains 1\.5\-2\.5 million records per year. Records provide information about business location (including address, census geography & lat/long coordinates (US database only)), number of employees, sales volume, NAICS & SIC codes, unique identifier across time for businesses and parent entities. Complete record layouts and decodes are available for download via the Borealis links above.
 
  
 
@@ -18,15 +22,15 @@ These are tabular datasets, however given their size they are too large to work 
 
 ### **Tables of Contents:**
 
-[Understanding the Datasets](#A)  
-[Setting up your Python Environment](#B)  
-[Downloading the Data Axle Files](#C)  
-[Uploading the Data Axle Files to Jupyter Notebooks](#D)  
-[Working with the Data Axle Files in Jupyter Notebooks](#E)  
-[Accessing the Getting Started Notebook](#F)  
+[Understanding the Datasets](#understanding-the-datasets)  
+[Setting up your Python Environment](#setting-up-your-python-environment)  
+[Downloading the Data Axle Files](#downloading-the-data-axle-files)  
+[Uploading the Data Axle Files to Jupyter Notebooks](#uploading-the-data-axle-files-to-jupyter-notebooks)  
+[Working with the Data Axle Files in Jupyter Notebooks](#working-with-the-data-axle-files-in-jupyter-notebooks)  
+[Accessing the Getting Started Notebook](#accessing-the-getting-started-notebooks)  
  
 
-### Understanding the Datasets
+## Understanding the Datasets
 
 Before querying the data, it's important to understand what is included in each file \- ie. which variables or characteristics are present, and what the values for each variable in a particular row represent. For example, the Canadian dataset contains a variable called **EMPSIZ** , which is an employee size code. The values for this variable are A \- K, which represent approximate employee size as denoted in the screenshot from the layout decode file below:
 
@@ -34,7 +38,7 @@ Before querying the data, it's important to understand what is included in each 
 
 This information is available from Borealis by downloading the **Layout** files for each country's data. **Note** that the variables, their naming conventions, as well as the decodes differ significantly between the US and Canadian Datasets. This is due to different rules and agreements within these countries and related jurisdictions around what can be collected.
 
-### Setting up your Python environment
+## Setting up your Python environment
 
 If you are a beginner, [Jupyter Notebooks](https://jupyter-notebook.readthedocs.io/en/latest/) are an excellent entry point to Python! These are computational notebooks, meaning they look similar to word documents and can contain notes, images, links and explanatory text, while also containing code which can be executed or run within the notebook itself. For a more detailed introduction to Jupyter Notebooks, please [watch](https://play.library.utoronto.ca/watch/b38ebfc6c8a6ac0da313b628e0300c05) the first twenty minutes of our workshop *An Introduction to Programming for Absolute Beginners Using Python Pt. 1,* or [download the tutorial instructions](https://mdl.library.utoronto.ca/technology/tutorials/python-information-tutorials-and-workshops) for that same workshop.
 
@@ -50,7 +54,7 @@ You may see a terminal window appear for a few seconds. After this, a browser wi
 
 **Note:** If you do not want to install Acaconda locally, it is available on several computers on campus. Please [contact us](https://mdl.library.utoronto.ca/about/contact-form) for more information.
 
-### Downloading the Data Axle Files
+## Downloading the Data Axle Files
 
 You'll first need to download the data file(s) you're interested in working with from Borealis, by navigating to the page for eithe [Canadian](https://doi.org/10.5683/SP3/IPKREG) or [US](https://doi.org/10.5683/SP3/GY5K1C) data. If you're not on campus, you'll need to login in order to download the files. You can do this by clicking on the "Off campus users log\-in here" notice near the top of the page.
 
@@ -66,7 +70,7 @@ As an example, if I wanted to work with the most recent Canadian data I would do
 
  
 
-### Uploading the Data Axle Files to Jupyter Notebooks
+## Uploading the Data Axle Files to Jupyter Notebooks
 
 Once you've downloaded the data, navigate back to your Jupyter Notebook browser window. Near the top right of the screen select **Upload.** A windows explorer or finder (Mac) window will appear. Select your file and click **Open**. You may get a warning about large file size \- select **OK** to confirm. The file will now appear at the top of your Jupyter Notebooks file list, with buttons to either **Upload** or **Cancel** to the right of the file name. You will need to click the **Upload** button to initiate the upload. A progress bar will appear, and confirm once the upload has been completed.
 
@@ -74,7 +78,7 @@ Once you've downloaded the data, navigate back to your Jupyter Notebook browser 
 
  
 
-### Working with the Data Axle Files in Jupyter Notebooks
+## Working with the Data Axle Files in Jupyter Notebooks
 
 Once your dataset has been uploaded to Jupyter, you're ready to start analysing it using Python. To do so, you'll first need to open a new Notebook to write and execute your Python code. You can do this by selecting **New** \> **Python 3** from the top right hand menu:
 
@@ -88,11 +92,11 @@ A new notebook will open automatically, titled **Untitled1\.** You can change th
 
 In order to work with these files, we'll need to import the **Pandas** library. This library is a collection of functions \- blocks of code prewritten and designed to do specific things \- that are tailored for working with tabular data files such as the Data Axle datasets. More detailed information on Pandas can be found [in their documentation](https://pandas.pydata.org/docs/user_guide/index.html). You can import Pandas by typing `import pandas as pd`. We can then use functions from this library by typing the shorthand `pd.[nameoffunction].`
 
-Once we've imported our library, we also need to read in the Data Axle dataset as an object in Python so that we can work with it. We do this by using Panda's `read_csv`function, and assigning the output of that function to a variable name of our choice. For example `canada_data = pd.read_csv("Canada_DB_2024.csv", dtype=str)` . Note that I am using an additional argument (condition) here within the function to set the data type for all columns to "string". This is avoid errors on import. If you wish to work with numbers as numerical data, you will need to reset the data type of those particular columns after import.
+Once we've imported our library, we also need to read in the Data Axle dataset as an object in Python so that we can work with it. We do this by using Panda's `read_csv` function, and assigning the output of that function to a variable name of our choice. For example `canada_data = pd.read_csv("Canada_DB_2024.csv", dtype=str)` . Note that I am using an additional argument (condition) here within the function to set the data type for all columns to "string". This is avoid errors on import. If you wish to work with numbers as numerical data, you will need to reset the data type of those particular columns after import.
 
 I can now query my dataset by calling on the `canada_data` object.
 
-### Accessing the Getting Started Notebooks
+## Accessing the Getting Started Notebooks
 
 Once you have your data available as an Python object to work with inside of your Notebook, there are a couple of options. You can either:
 
@@ -121,4 +125,4 @@ Once you have downloaded the example notebooks, these can be uploaded to Jupyter
 
 These are just a few examples to help you get started, but of course there is much more you can do. If you have any questions, feel free to [contact us](https://mdl.library.utoronto.ca/about/contact-form).
 
-**Date Created:** 2025\-05\-22**Updated:** 2025\-05\-30
+**Date Created:** 2025\-05\-22 **Updated:** 2025\-05\-30
