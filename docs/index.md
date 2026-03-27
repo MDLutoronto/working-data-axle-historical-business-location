@@ -6,7 +6,13 @@ permalink: "/"  #! Remove this if not the homepage
 staff:
  - name: Kara Handren
    link: https://library.utoronto.ca/staff/kara-handren
-
+staff:
+ - name: Nick Field
+   link: https://library.utoronto.ca/staff/nick-field
+ - name: Kara Handren
+   link: https://library.utoronto.ca/staff/kara-handren
+ - name: Neil Aitken
+   link: https://library.utoronto.ca/staff/neil-aitken
 ---
 
 # Working with the Data Axle Historical Business Location Data
