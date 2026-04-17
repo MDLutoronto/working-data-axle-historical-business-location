@@ -13,6 +13,8 @@ staff:
    link: https://library.utoronto.ca/staff/kara-handren
  - name: Neil Aitken
    link: https://library.utoronto.ca/staff/neil-aitken
+nav_order: 0
+has_children: true
 ---
 
 # Working with the Data Axle Historical Business Location Data
@@ -21,12 +23,12 @@ The Data Axle Historical Business Location Data provides one data file (.txt or 
 
  
 
-Working with the Data Axel Files using Python
+Working with the Data Axle Files using Python
 ---------------------------------------------
 
 These are tabular datasets, however given their size they are too large to work with or even examine using traditional tools such as Excel or Notepad\+\+. Each file contains millions of rows, and over 100 columns, which is beyond the ability of most software to display. As a result, these data will need to be worked with programatically using your language of choice. The tutorial below contains some basic information to get started on this using Python. In particular, it will show you how to easily export a subset of interest, that is small enough to be worked on using a tool such as Excel.
 
-### **Tables of Contents:**
+<!-- ### **Tables of Contents:**
 
 [Understanding the Datasets](#understanding-the-datasets)  
 [Setting up your Python Environment](#setting-up-your-python-environment)  
@@ -34,7 +36,7 @@ These are tabular datasets, however given their size they are too large to work 
 [Uploading the Data Axle Files to Jupyter Notebooks](#uploading-the-data-axle-files-to-jupyter-notebooks)  
 [Working with the Data Axle Files in Jupyter Notebooks](#working-with-the-data-axle-files-in-jupyter-notebooks)  
 [Accessing the Getting Started Notebook](#accessing-the-getting-started-notebooks)  
- 
+  -->
 
 ## Understanding the Datasets
 
