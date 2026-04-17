@@ -13,8 +13,7 @@ staff:
    link: https://library.utoronto.ca/staff/kara-handren
  - name: Neil Aitken
    link: https://library.utoronto.ca/staff/neil-aitken
-nav_order: 0
-has_children: true
+
 ---
 
 # Working with the Data Axle Historical Business Location Data
@@ -28,7 +27,7 @@ Working with the Data Axle Files using Python
 
 These are tabular datasets, however given their size they are too large to work with or even examine using traditional tools such as Excel or Notepad\+\+. Each file contains millions of rows, and over 100 columns, which is beyond the ability of most software to display. As a result, these data will need to be worked with programatically using your language of choice. The tutorial below contains some basic information to get started on this using Python. In particular, it will show you how to easily export a subset of interest, that is small enough to be worked on using a tool such as Excel.
 
-<!-- ### **Tables of Contents:**
+### **Tables of Contents:**
 
 [Understanding the Datasets](#understanding-the-datasets)  
 [Setting up your Python Environment](#setting-up-your-python-environment)  
@@ -36,7 +35,7 @@ These are tabular datasets, however given their size they are too large to work 
 [Uploading the Data Axle Files to Jupyter Notebooks](#uploading-the-data-axle-files-to-jupyter-notebooks)  
 [Working with the Data Axle Files in Jupyter Notebooks](#working-with-the-data-axle-files-in-jupyter-notebooks)  
 [Accessing the Getting Started Notebook](#accessing-the-getting-started-notebooks)  
-  -->
+ 
 
 ## Understanding the Datasets
 
@@ -134,3 +133,5 @@ Once you have downloaded the example notebooks, these can be uploaded to Jupyter
 These are just a few examples to help you get started, but of course there is much more you can do. If you have any questions, feel free to [contact us](https://mdl.library.utoronto.ca/about/contact-form).
 
 **Date Created:** 2025\-05\-22 **Updated:** 2025\-05\-30
+
+**Technique:** [Extracting data](https://mdlutoronto.github.io/tutorials-search/?technique=Extracting+data) \| **Tools:** [Python](https://mdlutoronto.github.io/tutorials-search/?tool=Python) \| **Data Format:** [Microdata](https://mdlutoronto.github.io/tutorials-search/?dataFormat=Microdata)
